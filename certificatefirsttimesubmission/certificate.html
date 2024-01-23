@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Certificate</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div>
+    <img id="background" src="./certificatebg.svg"/>
+    <div id="title">
+        <h1>
+            CERTIFICATE 
+        </h1>
+    </div>
+    <div id="subtitle">
+        <h2>
+            OF PARTICIPATION
+        </h2>
+    </div>
+    <div id="givento">
+        <h3>
+            THIS CERTIFICATE IS PRESENTED TO
+        </h3>
+    </div>
+    <div id="name">
+        <h1 id="username">
+            <!-- {user.first_name} {user.last_name} -->
+            firstname lastname
+        </h1>
+        
+    </div>
+    <h4 id="info">
+        For the performance in the exam given on<span id="testdate">[Date]</span> on <span id="subject">[subject]</span> at ShauryaTS
+    </h4>
+    <div id="infographics">
+        <div id="accuracy">
+    <img src="Group.svg" id="accuracyimg" width="4rem" height="4rem" alt=""></div>
+    <img id="medal" src="bronzemedal.svg"  alt="">
+    <div id="timetaken">
+    <img src="Group 100.svg"  alt=""></div>
+    
+</div>
+<div id="subtext">
+    <div id="accuracytext"><h4>Accuracy</h4></div>
+    <div id="medals"><h4>Bronze Medal</h4></div>
+    <div id="Timing"><h4>Timing</h4></div>
+</div>
+
+<div id="subtextinfo">
+    <div id="accuracyinfo"><h4><span id="accpercent">100</span>%</h4></div>
+    <div id="medalsinfo"><h4><span id="scoregot">40</span>/<span id="totalscore">40</span></h4></div>
+    <div id="Timinginfo"><h4>Completed in<span id="timecomp">[n]</span>minutes</h4></div>
+</div>
+
+	<script src="certificate.js"></script>
+    <script>
+        document.getElementById("username").innerHTML={user.first_name} {user.last_name}
+        document.getElementById("testdate").innerHTML={test.date}
+        document.getElementById("subject").innerHTML= {paperData?.standards?.length > 1
+                            ? (
+                                <>
+                                    <span key={0}>{paperData.standards[0].display_name?.length > 6 ? paperData.standards[0].display_name.slice(0, 6) + ("..") : paperData.standards[0].display_name}</span>
+
+                                </>
+                            )
+                            : <span key={0}>{paperData?.standards[0]?.display_name?.length > 6 ? paperData.standards[0].display_name.slice(0, 8) + ("..") : paperData?.standards[0]?.display_name}</span>
+                        }
+                        document.getElementById("medal").src = "silvermedal.svg";
+
+    </script>
+    </div>
+  </body>
+</html>
