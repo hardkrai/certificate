@@ -8,13 +8,13 @@
     padding: 0;
 } */
 
-body {
+/* body {
     background-image: "./certificates.svg";
     width: 100%;
     height: 100%;
     /* background-size: cover; */
-    position: relative;
-}
+/* position: relative; */
+/* } */
 
 #background {
     top: 0;
@@ -22,6 +22,10 @@ body {
     right: 0;
     bottom: 0;
     margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     /* position:absolute; */
     z-index: -999;
 }
@@ -39,36 +43,47 @@ h1 {
     color: #2e71e6;
 
 }
-h2{
+
+h2 {
     font-family: 'League Spartan', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     color: #424b9b;
 
 }
-h3{
+
+h3 {
     font-family: 'League Spartan', sans-serif;
     font-weight: 600;
     font-size: 1.5rem;
     color: #02263b;
     opacity: 90%;
 }
+
 h4 {
     font-family: 'League Spartan', sans-serif;
     font-weight: 500;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     color: #8f8f8f;
     opacity: 90%;
 }
 
-#title{
+.signature h4 {
+    color: #02263b;
+}
+
+.paperc {
+    color: #02263b;
+}
+
+#logo {
     position: absolute;
     flex-wrap: wrap;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -20rem;
-    
+    margin-top: -50rem;
+
     justify-content: center;
     align-items: center;
     left: 50%;
@@ -76,11 +91,29 @@ h4 {
     z-index: 200;
     text-align: center;
 }
-#title h1{
+
+#title {
+    position: absolute;
+    flex-wrap: wrap;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20rem;
+
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    text-align: center;
+}
+
+#title h1 {
     font-size: 6rem;
     color: #424b9b;
 }
-#subtitle{
+
+#subtitle {
     position: absolute;
     flex-wrap: wrap;
     max-width: 700px;
@@ -94,26 +127,27 @@ h4 {
     z-index: 200;
     text-align: center;
 }
-#givento{
+
+#givento {
     position: absolute;
     flex-wrap: wrap;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -10rem;
+    margin-top: -5rem;
     justify-content: center;
     align-items: center;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 200;
-    text-align: center;   
+    text-align: center;
 }
 
 #name {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2rem;
+    margin-top: 8rem;
     justify-content: center;
     align-items: center;
     left: 50%;
@@ -128,7 +162,7 @@ h4 {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10rem;
+    margin-top: 14rem;
     justify-content: center;
     align-items: center;
     left: 50%;
@@ -136,7 +170,8 @@ h4 {
     z-index: 200;
     text-align: center;
 }
-#infographics{
+
+#infographics {
     position: absolute;
     flex-wrap: wrap;
     /* max-width: 700px; */
@@ -151,73 +186,113 @@ h4 {
     text-align: center;
     flex-wrap: nowrap;
 }
-#infographics img{
-width: 12rem;
-height: 12rem;
-margin-left: 5rem;
-margin-right: 5rem;
+
+#line {
+    background-color: #02263b;
+    position: absolute;
+    flex-wrap: wrap;
+    /* min-width: 700px; */
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 10/rem; */
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 400;
+
+    /* background-color: #02/263b; */
+    position: absolute;
+    width: 10%;
+    height: 2.5px;
+    opacity: 80%;
+    
+    margin-top: 33rem;
+  
+    /* left: 0; */
+
+    text-align: center;
+    flex-wrap: nowrap;
 }
-#accuracy{
+
+#infographics img {
+    width: 12rem;
+    height: 12rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+#accuracy {
     /* margin-left: 5rem; */
 }
- /* #timetaken img{
+
+/* #timetaken img{
     width: 16.5rem;
     height: 16.5rem;
 } */
 
-#subtext{
+#subtext {
     position: absolute;
     flex-wrap: nowrap;
 
-    
-    margin-top: 49rem;
+
+    margin-top: 44rem;
     justify-content: center;
     align-items: center;
-    left:50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 200;
     text-align: center;
     flex-wrap: nowrap;
 }
-#accuracytext{
+
+#accuracytext {
     /* margin-right:1rem; */
     /* margin-left: 5rem; */
 }
-#medals{
-    margin-left: 13rem;
-    margin-right: 14rem;
+
+#medals {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px black;
+    border-width: 1px 1px 0px 0px;
 }
-#timing{
+
+#timing {
     /* margin-left: auto; */
     /* margin-right: 5rem; */
     /* margin-right: 30rem; */
     margin-left: 11rem;
 }
 
-#subtextinfo{
+#subtextinfo {
+    display: flex;
     position: absolute;
     flex-wrap: nowrap;
-
-    
+   
+    flex: 1;
     margin-top: 57rem;
     justify-content: center;
     align-items: center;
-    left:50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 200;
     text-align: center;
     flex-wrap: nowrap;
 }
-#accuracyinfo{
-    margin-right:2rem;
+
+#accuracyinfo {
+    /* margin-right: 2rem; */
     /* font-size: :2rem; */
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
 }
-#medalsinfo{
-    margin-left: 15rem;
-    margin-right: 14rem;
+
+#medalsinfo {
+    /* margin-left: rem; */
+    margin-right: 4rem;
 }
-#timinginfo{
-    
+
+#timinginfo {
+
     margin-left: 11rem;
 }

@@ -9,7 +9,8 @@
   </head>
   <body>
     <div>
-    <img id="background" src="./certificatebg.svg"/>
+    <img id="background" src="./CERTIFICATE (1).svg"/>
+    <div id="logo"><img src="shauryalogo.svg"/></div>
     <div id="title">
         <h1>
             CERTIFICATE 
@@ -33,44 +34,36 @@
         
     </div>
     <h4 id="info">
-        For the performance in the exam given on<span id="testdate">[Date]</span> on <span id="subject">[subject]</span> at ShauryaTS
+        For the performance in the exam given on <span id="testdate">[Date]</span> in <span id="subject">[paper]</span> at Shaurya Tech Solutions
     </h4>
     <div id="infographics">
-        <div id="accuracy">
-    <img src="Group.svg" id="accuracyimg" width="4rem" height="4rem" alt=""></div>
-    <img id="medal" src="bronzemedal.svg"  alt="">
-    <div id="timetaken">
-    <img src="Group 100.svg"  alt=""></div>
+        <!-- <div id="accuracy"> -->
+    <!-- <img src="Group.svg" id="accuracyimg" width="4rem" height="4rem" alt=""></div> -->
+    <img id="medal" src="sign.svg"  alt="">
     
+    <!-- <div id="timetaken"> -->
+    <!-- <img src="Group 100.svg"  alt=""></div> -->
+    
+</div> 
+<div id="line"></div>
+<div id="sign">
+    <!-- <img src="sign.svg" id="signatureimg" alt=""> -->
 </div>
 <div id="subtext">
-    <div id="accuracytext"><h4>Accuracy</h4></div>
-    <div id="medals"><h4>Bronze Medal</h4></div>
-    <div id="Timing"><h4>Timing</h4></div>
+    <!-- <div id="accuracytext"><h4>S</h4></div> -->
+    <div id="medals" class="signature"><h4>Signature</h4></div>
+    <!-- <div id="medals"><h4>Bronze Medal</h4></div> -->
+    <!-- <div id="Timing"><h4>Timing</h4></div> -->
 </div>
 
 <div id="subtextinfo">
-    <div id="accuracyinfo"><h4><span id="accpercent">100</span>%</h4></div>
-    <div id="medalsinfo"><h4><span id="scoregot">40</span>/<span id="totalscore">40</span></h4></div>
-    <div id="Timinginfo"><h4>Completed in<span id="timecomp">[n]</span>minutes</h4></div>
+    <!-- <div id="accuracyinfo"><h4><span id="accpercent">100</span>%</h4></div> -->
+    <div id="medalsinfo"><h4><span id="scoregot" class="paperc">Paper Code : </span ><span id="totalscore" class="paperc"> Paper Code</span></h4></div>
+    <div id="Timinginfo"><h4><span id="scoregot" class="paperc">Author : </span ><span id="totalscore" class="paperc"> Author Name</span></h4></div>
+    <!-- <div id="Timinginfo"><h4>Completed in<span id="timecomp">[n]</span>minutes</h4></div> -->
 </div>
 
-	<!-- <script src="certificate.js"></script> -->
-    <!-- <script>
-        document.getElementById("username").innerHTML={user.first_name} {user.last_name}
-        document.getElementById("testdate").innerHTML={test.date}
-        document.getElementById("subject").innerHTML= {paperData?.standards?.length > 1
-                            ? (
-                                <>
-                                    <span key={0}>{paperData.standards[0].display_name?.length > 6 ? paperData.standards[0].display_name.slice(0, 6) + ("..") : paperData.standards[0].display_name}</span>
-
-                                </>
-                            )
-                            : <span key={0}>{paperData?.standards[0]?.display_name?.length > 6 ? paperData.standards[0].display_name.slice(0, 8) + ("..") : paperData?.standards[0]?.display_name}</span>
-                        }
-                        document.getElementById("medal").src = "silvermedal.svg";
-
-    </script> -->
+	
     </div>
   </body>
 </html>
