@@ -8,13 +8,14 @@
     padding: 0;
 } */
 
-/* body {
-    background-image: "./certificates.svg";
-    width: 100%;
-    height: 100%;
-    /* background-size: cover; */
-/* position: relative; */
-/* } */
+#container {
+    /* background-image: "./certificates.svg"; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 
 #background {
     top: 0;
@@ -39,14 +40,14 @@ div {
 h1 {
 
     font-family: 'League Spartan', sans-serif;
-    font-size: 4rem;
+    font-size: 400%;
     color: #2e71e6;
 
 }
 
 h2 {
     font-family: 'League Spartan', sans-serif;
-    font-size: 2.5rem;
+    font-size: 250%;
     font-weight: 700;
     color: #424b9b;
 
@@ -55,7 +56,7 @@ h2 {
 h3 {
     font-family: 'League Spartan', sans-serif;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 150%;
     color: #02263b;
     opacity: 90%;
 }
@@ -63,17 +64,19 @@ h3 {
 h4 {
     font-family: 'League Spartan', sans-serif;
     font-weight: 500;
-    font-size: 1.7rem;
+    font-size: 170%;
     color: #8f8f8f;
     opacity: 90%;
 }
 
 .signature h4 {
     color: #02263b;
+    font-size: 200%;
 }
 
 .paperc {
     color: #02263b;
+
 }
 
 #logo {
@@ -109,7 +112,7 @@ h4 {
 }
 
 #title h1 {
-    font-size: 6rem;
+    font-size: 600%;
     color: #424b9b;
 }
 
@@ -134,7 +137,7 @@ h4 {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -5rem;
+    margin-top: -6rem;
     justify-content: center;
     align-items: center;
     left: 50%;
@@ -147,7 +150,7 @@ h4 {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 8rem;
+    margin-top: 6rem;
     justify-content: center;
     align-items: center;
     left: 50%;
@@ -162,7 +165,7 @@ h4 {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 14rem;
+    margin-top: 12rem;
     justify-content: center;
     align-items: center;
     left: 50%;
@@ -177,7 +180,7 @@ h4 {
     /* max-width: 700px; */
     margin-left: auto;
     margin-right: auto;
-    margin-top: 38rem;
+    margin-top: 32rem;
     justify-content: center;
     align-items: center;
     left: 50%;
@@ -207,7 +210,7 @@ h4 {
     height: 2.5px;
     opacity: 80%;
     
-    margin-top: 33rem;
+    margin-top: 30rem;
   
     /* left: 0; */
 
@@ -216,10 +219,10 @@ h4 {
 }
 
 #infographics img {
-    width: 12rem;
-    height: 12rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    width: 80%;
+    height: 80%;
+    margin-left: 500%;
+    margin-right: 500%;
 }
 
 #accuracy {
@@ -236,7 +239,7 @@ h4 {
     flex-wrap: nowrap;
 
 
-    margin-top: 44rem;
+    margin-top: 42rem;
     justify-content: center;
     align-items: center;
     left: 50%;
@@ -262,7 +265,7 @@ h4 {
     /* margin-left: auto; */
     /* margin-right: 5rem; */
     /* margin-right: 30rem; */
-    margin-left: 11rem;
+    /* margin-left: 11%; */
 }
 
 #subtextinfo {
@@ -289,10 +292,82 @@ h4 {
 
 #medalsinfo {
     /* margin-left: rem; */
-    margin-right: 4rem;
+    margin-right: 5rem;
 }
 
 #timinginfo {
 
-    margin-left: 11rem;
+    /* margin-left: 12rem; */
+}
+
+@media only screen and (max-width: 400px) {
+    #container {
+        height: auto; /* Adjust as needed */
+    }
+
+    #logo{
+        margin-top: -160%;
+        /* right: -50%; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #title,
+    #subtitle,
+    #givento,
+    #name,
+    #info,
+    #infographics,
+    #line,
+    #subtext,
+    #subtextinfo {
+        margin-top: 5%;
+    }
+
+    #title h1 {
+        font-size: 400%;
+    }
+
+    #subtitle h2 {
+        font-size: 200%;
+    }
+
+    #givento h3 {
+        font-size: 120%;
+    }
+
+    #name h1 {
+        font-size: 150%;
+    }
+
+    #info h4 {
+        font-size: 140%;
+    }
+
+    .signature h4 {
+        font-size: 160%;
+    }
+
+    .paperc {
+        font-size: 140%;
+    }
+
+    #infographics {
+        margin-top: 20%;
+    }
+
+    #line {
+        margin-top: 20%;
+    }
+
+    #infographics img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #medalsinfo {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
